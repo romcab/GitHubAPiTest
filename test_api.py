@@ -24,8 +24,8 @@ def test_get_user_by_name():
 def test_get_organization():
     access_token = 'token_here'
     g = Github(base_url="url_here", login_or_token=access_token)
-    org = g.get_organization("CoreTech-GRID")
-    assert "CoreTech-GRID" == org.login
+    org = g.get_organization("org_here")
+    assert "login_here" == org.login
 
 # https://stackoverflow.com/questions/34392221/api-calls-to-get-number-of-commits-by-author-github-api
 def test_get_commits():
